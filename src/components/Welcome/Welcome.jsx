@@ -9,10 +9,14 @@ export default function Welcome() {
     background:transparent;
     & > p {
       fond-size: 60px;
+    }
+    & > h1{
+      color: rgb(177, 75, 75);
     }`;
   return (
     <Wel>
-      <p className="welcome">Welcome Here </p>
+      <p className="welcome">Welcome </p>
+      <h1>To My Portfolio</h1>
     </Wel>
   );
 }

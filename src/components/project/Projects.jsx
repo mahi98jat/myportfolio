@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Projects() {
   const ProjectContainer = styled.div`
     display: grid;
-    background: white;
+    background: #efe7e7;
     margin-top: 1%;
     color: blue;
     overflow: scroll;
@@ -67,7 +67,12 @@ export default function Projects() {
             JavaScript | MongoDB | Express | MVC model | Node Js | HTML | CSS
           </p>
           {/* <Redirect> visit repo</Redirect> */}
-          <Link>visit repo</Link>
+          <a
+            href="https://github.com/ankitkumar3443/Llinkedin_learning/tree/main/Project"
+            target="_blank"
+          >
+            visit repo
+          </a>
         </div>
       </Project1>
       <Project2>
@@ -87,7 +92,12 @@ export default function Projects() {
           </p>
           <h6>Tech Stack :-</h6>
           <p>React | MongoDB| HTML | CSS</p>
-          <Link>visit repo</Link>
+          <a
+            href="https://github.com/Sabareesh-Subramanian/JioSaavn_Clone/tree/master/client"
+            target="_blank"
+          >
+            visit repo
+          </a>
         </div>
       </Project2>
     </ProjectContainer>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import DownloadButton from "./Button";
 export default function About() {
   const Container = styled.div`
-    background: white;
+    background: #efe7e7;
     height: 100%;
   `;
   const AboutMe = styled.div`
@@ -30,7 +30,7 @@ export default function About() {
   return (
     <Container>
       <AboutMe>
-        <img src="/images/portfoliopic.jpeg"></img>
+        <img src="/images/portfoliopic.jpg"></img>
         <div>
           <h1>Mahipal Singh Haritwal</h1>
           <h4>Full Stack Web Developer (MERN Stack)</h4>
@@ -38,12 +38,14 @@ export default function About() {
       </AboutMe>
       <div>
         <Para>
-          I am software engineer fresh graduate from Masai school, Bengaluru. I
-          have done Bachelor of Engineering in Computer Science and Science in
-          year 2020. I have learned Full Stack Web Development. I am looking for
-          an opportunity to enhance my skills. I belongs to a agregarian
-          background. In my spare time I like to playing cricket and riding
-          bike.
+          I am an aspiring Full Stack Web Developer. Learning MERN Stack at
+          Masai School, Bengaluru, India. In this journey of learning I have
+          learned technologies as JavaScript, React, Redux, Data-Structure,
+          Algorithms. 
+          Learning technologies and implementing drives a immense
+          happiness from inside. I have done Bachelors of Engineering in
+          Computer Science and Engineering from Sha Shib College of Technology,
+          Bhopal.
         </Para>
       </div>
       <DownloadButton>Download Resume</DownloadButton>

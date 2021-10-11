@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
 
 export default function Contact() {
   const Social = styled.div`
@@ -9,6 +9,9 @@ export default function Contact() {
     height: 100%;
     color: blue;
     padding-top: 10%;
+    & > div > div {
+      margin: 8%;
+    }
   `;
   const FormContainer = styled.div`
   height:90%
@@ -43,34 +46,49 @@ export default function Contact() {
     font-size: 18px;
   }
   `;
-  const Box = styled.input`
-    width: 80%;
-    height: 300px;
-  `;
+
   return (
     <Social>
       <div>
-        <Link to="https://github.com/mahi98jat">
-          <h1>GitHub</h1>
-        </Link>
-        <Link to="www.linkedin.com/in/jtmahi">
-          <h1>Linkedin</h1>
-        </Link>
+        <div>
+          <a href="https://github.com/mahi98jat" target="_blank">
+            <img
+              style={{
+                height: "50px",
+                width: "50px",
+              }}
+              src="./images/github-logo.png"
+            />
+          </a>
+          <br />
+          <span>GitHub</span>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/jtmahi/" target="_blank">
+            <img
+              style={{
+                height: "50px",
+                width: "50px",
+              }}
+              src="./images/5296501_linkedin_network_linkedin logo_icon.png"
+            />
+          </a>
+          <br />
+          <span>Linkedin</span>
+        </div>
+        <div>
+          <h3> Mobile:- 7024370634</h3>
+          <h3> Email:- mahi98jat@gmail.com</h3>
+        </div>
       </div>
-      <div>
-        <h3>7024370634</h3>
-        <h3>mahi98jat@gmail.com</h3>
-      </div>
+
       <FormContainer>
         <input type="text" placeholder=" Name here"></input>
         <br />
         <input type="email" placeholder=" Email here"></input>
         <br />
-        {/* <Box type="text" placeholder="comments"></Box> */}
-        <textarea
-         
-          placeholder="Comment here..."
-        ></textarea>
+
+        <textarea placeholder="Comment here..."></textarea>
         <br />
         <button>Submit</button>
       </FormContainer>

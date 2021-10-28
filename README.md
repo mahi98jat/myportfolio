@@ -1,6 +1,3 @@
-## What is there in this project?
-This website has all the information about me such as my complete introduction, education background, skills and projects on which I have worked.
-
 
 ## Getting Started with Create React App
 

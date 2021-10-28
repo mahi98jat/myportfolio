@@ -3,25 +3,58 @@
 }
 
 .App {
+  display: block;
+  overflow: auto;
   width: 100%;
   text-align: center;
-  color: White;
-  background-image: url("https://wallpaper.dog/large/17016021.gif");
-  height: 700px;
-  /* background-color: #efe7e7; */
-  margin-top: 47px;
+
+  /* background: #132c33; 
+  */
+  background-color: #162b32;
+  position: absolute;
+  /* top: 0px; */
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100vh;
 }
-.welcome {
-  font-size: 120px;
-  color: rgb(177, 75, 75);
+.s-f{
+  margin-top:40%;
 }
 .soft-skills,
 .tech-skills {
-  border-bottom: 1px solid brown;
   font-size: 22px;
+  text-align: center;
+  margin-top: 2%;
 }
-span{
-  font-size:11px;
+span {
+  font-size: 11px;
   font-family: 400;
-  color: #1c7947;
+  color: #d3e0ea;
+}
+a {
+  text-decoration: none;
+  color: #1687a7;
+ 
+}
+.a-l{
+  padding-bottom:1%;
+}
+.mobile,
+.email {
+  padding: 2%;
+  margin: 10px;
+}
+.my-name {
+  letter-spacing: 0.6px;
+  padding: 2%;
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+
+  line-height: 0.75;
+  margin: 10px 0;
 }

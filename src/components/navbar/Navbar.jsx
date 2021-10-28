@@ -4,21 +4,29 @@ import "./Navbar.css";
 export default function Navbar() {
   const Nav = styled.div`
     height: 47px;
-    margin-top: -47px;
+   
+   
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background: #979393;
+    background: #132C33;
     text-aligh: center;
     text-decoration: none;
     position: fixed;
+    font-size: 22px;
+    box-shadow: 2px 2px 5px 0.8px #d8e3e7;
+    @media (max-width: 768px) {
+     font-size: 18px;
+    }
+    @media (max-width: 420px) {
+      font-size: 11px;
+     }
+    
   `;
   return (
     <Nav>
+     
       <Link className="link" to="/">
-        Welcome
-      </Link>
-      <Link className="link" to="/about">
         About Me
       </Link>
       <Link className="link" to="/project">

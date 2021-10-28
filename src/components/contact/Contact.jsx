@@ -1,50 +1,94 @@
 import styled from "styled-components";
 
-
 export default function Contact() {
   const Social = styled.div`
+  
+  border-radius: 5px;
     display: flex;
     justify-content: space-around;
-    background: #efe7e7;
-    height: 100%;
-    color: blue;
+    color: #D3E0EA;
     padding-top: 10%;
+    border-radius: 5px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-top:5%;
+      
+    }
+    &>div{
+      padding:2%;
+    }
+    
     & > div > div {
       margin: 8%;
+      width: 300px;
+      padding:2%;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px 1px #d8e3e7;
+      @media (max-width: 768px) {
+        margin: 20px auto;
+        
+      }
+      transition:transform 0.4s;
+      &:hover{
+        -ms-transform: scale(1.2); 
+        -webkit-transform: scale(1.2); 
+        transform: scale(1.2); 
+      }
     }
+    &
   `;
   const FormContainer = styled.div`
-  height:90%
-  width:90%;
-  
- 
-  &>input{
-    width:300px;
-    border:0.1px solid gray;
-    background:transparent;
-    margin:1%;
-    outline:none;
-
-  }
-  &>textarea{
-    width:300px;
-    border:0.1px solid gray;
-    height:200px;
-    margin:1%;
-    background:transparent;
-    outline:none;
-   
-  }
-  &>button{
-    height: 47px;
-    width: 200px;
-    color: white;
-    background-color:blue;
-    margin: auto;
+    width: 350px;
     border-radius: 5px;
-    border: none;
-    font-size: 18px;
-  }
+    transition:transform 0.4s;
+    &:hover{
+      -ms-transform: scale(1.2); 
+      -webkit-transform: scale(1.2); 
+      transform: scale(1.2); 
+    }
+    @media (max-width: 768px) {
+      margin: auto;
+    }
+    & > input {
+      width: 85%;
+      height: 40px;
+      border: none;
+      color: #d3e0ea;
+      background: transparent;
+      margin: 3%;
+      outline: none;
+      border-radius: 5px;
+      box-shadow: 1px 2px 3px 1px #d8e3e7;
+     
+    }
+    & > textarea {
+      border: none;
+      width: 85%;
+      color: #d3e0ea;
+      padding-top:5%;
+      box-shadow: 1px 2px 3px 1px #d8e3e7;
+      height: 200px;
+      margin: 3%;
+      background: transparent;
+      outline: none;
+      border-radius: 5px;
+     
+    }
+    & > button {
+      border: none;
+      height: 47px;
+      width: 200px;
+      color: #d3e0ea;
+      background: transparent;
+      margin: 3% auto;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      box-shadow: 2px 2px 5px 1px #d8e3e7;
+      &:hover {
+        background: #1687A7;
+      }
+    }
   `;
 
   return (
@@ -54,6 +98,7 @@ export default function Contact() {
           <a href="https://github.com/mahi98jat" target="_blank">
             <img
               style={{
+                margin: "5px",
                 height: "50px",
                 width: "50px",
               }}
@@ -67,6 +112,7 @@ export default function Contact() {
           <a href="https://www.linkedin.com/in/jtmahi/" target="_blank">
             <img
               style={{
+                margin: "5px",
                 height: "50px",
                 width: "50px",
               }}
@@ -77,12 +123,20 @@ export default function Contact() {
           <span>Linkedin</span>
         </div>
         <div>
-          <h3> Mobile:- 7024370634</h3>
-          <h3> Email:- mahi98jat@gmail.com</h3>
+          <p className = "mobile"> Mobile:- 7024370634</p>
+          <p className = "mobile"> Email:- mahi98jat@gmail.com</p>
         </div>
       </div>
 
       <FormContainer>
+        <p
+          style={{
+            textAlign: "left",
+            marginLeft: "7%",
+          }}
+        >
+          Send me text...
+        </p>
         <input type="text" placeholder=" Name here"></input>
         <br />
         <input type="email" placeholder=" Email here"></input>
@@ -90,7 +144,7 @@ export default function Contact() {
 
         <textarea placeholder="Comment here..."></textarea>
         <br />
-        <button>Submit</button>
+        <button>SUBMIT</button>
       </FormContainer>
     </Social>
   );

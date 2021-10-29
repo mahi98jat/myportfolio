@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 export default function Projects() {
   const ProjectContainer = styled.div`
+    letter-spacing: 1px;
     display: grid;
     margin-top: 6%;
     color: #d3e0ea;
@@ -14,80 +15,29 @@ export default function Projects() {
       flex-direction: column;
       margin-top: 16%;
     }
+    & > p {
+      font-size: 22px;
+    }
   `;
-  const Project1 = styled.div`
+  const Project = styled.div`
     display: flex;
     justify-content: space-around;
     margin: 1%;
-
+    box-shadow: 2px 2px 5px 1px #d8e3e7;
     @media (max-width: 768px) {
       flex-direction: column;
     }
     & > img {
-      height: 90%;
+      margin: auto;
+      height: 80%;
       width: 500px;
       border-radius: 5px;
       transition: transform 0.4s;
       &:hover {
-        -ms-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
       }
-
-      box-shadow: 2px 2px 5px 1px #d8e3e7;
-      @media (max-width: 768px) {
-        width: 90%;
-        margin: 20px auto;
-      }
-    }
-    & > div {
-      height: 90%;
-      width: 50%;
-      border-radius: 5px;
-      transition: transform 0.4s;
-      padding-bottom: 0.5%;
-      &:hover {
-        -ms-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
-
-      box-shadow: 2px 2px 5px 0.8px #d8e3e7;
-      @media (max-width: 768px) {
-        width: 90%;
-        margin: auto;
-      }
-    }
-    & > div > p {
-      width: 80%;
-      margin: 2% auto;
-      color: #d3e0ea;
-      letter-spacing: 1px;
-      line-height: 1.5;
-      @media (max-width: 768px) {
-        width: 90%;
-      }
-    }
-  `;
-  const Project2 = styled.div`
-    display: flex;
-    justify-content: space-around;
-    margin: 1%;
-    height: 100%;
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
-    & > img {
-      height: 90%;
-      width: 500px;
-      border-radius: 5px;
-      transition: transform 0.4s;
-      &:hover {
-        -ms-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
-      box-shadow: 2px 2px 5px 0.8px #d8e3e7;
 
       @media (max-width: 768px) {
         width: 90%;
@@ -95,17 +45,16 @@ export default function Projects() {
       }
     }
     & > div {
-      padding-bottom: 0.5%;
-      height: 90%;
+      height: 80%;
       width: 50%;
       border-radius: 5px;
       transition: transform 0.4s;
+      padding-bottom: 0.5%;
       &:hover {
-        -ms-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
       }
-      box-shadow: 2px 2px 5px 0.8px #d8e3e7;
 
       @media (max-width: 768px) {
         width: 90%;
@@ -123,9 +72,11 @@ export default function Projects() {
       }
     }
   `;
+
   return (
     <ProjectContainer>
-      <Project2>
+      <p> Projects which I worked on are...</p>
+      <Project>
         <div>
           {" "}
           <h3>JIO SAAVAN (Music App)</h3>
@@ -150,8 +101,8 @@ export default function Projects() {
           src="https://user-images.githubusercontent.com/83001524/135755654-171a9df3-de0e-4e6a-9f67-2e82bdae14b3.png"
           alt="home"
         ></img>
-      </Project2>
-      <Project1>
+      </Project>
+      <Project>
         <div>
           <h3>LYNDA LEARNING</h3>
           <p>
@@ -178,7 +129,7 @@ export default function Projects() {
           src="https://user-images.githubusercontent.com/53153822/130081241-cce4746f-9396-49f9-8c08-d92c63deb0f4.png"
           alt="home"
         ></img>
-      </Project1>
+      </Project>
     </ProjectContainer>
   );
 }

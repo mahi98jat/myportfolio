@@ -6,8 +6,8 @@
 }
 .link:hover {
     transition:transform 0.4s;
-  -ms-transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
   color: #3DB2FF;
 }

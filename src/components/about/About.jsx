@@ -30,13 +30,13 @@ export default function About() {
       width: 40%;
       margin-top: 12%;
       color: #d3e0ea;
-      box-shadow: 2px 2px 5px 1px #d8e3e7;
+      
       border-radius: 5px;
       transition: transform 0.4s;
       &:hover {
-        -ms-transform: scale(1.3);
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
       }
       @media (max-width: 768px) {
         width: 80%;
@@ -61,7 +61,7 @@ export default function About() {
       <AboutMe>
         <img src="/images/portfoliopic.jpg"></img>
         <div>
-          <h1 className="my-name">Mahipal Singh Haritwal</h1>
+          <h1 className="my-name">Mahipal Singh</h1>
           <h4
             style={{
               letterSpacing: "1px",

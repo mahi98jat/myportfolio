@@ -7,19 +7,15 @@
   overflow: auto;
   width: 100%;
   text-align: center;
-
-  /* background: #132c33; 
-  */
   background-color: #162b32;
   position: absolute;
-  /* top: 0px; */
   right: 0px;
   bottom: 0px;
   left: 0px;
   height: 100vh;
 }
-.s-f{
-  margin-top:40%;
+.s-f {
+  margin-top: 40%;
 }
 .soft-skills,
 .tech-skills {
@@ -35,10 +31,9 @@ span {
 a {
   text-decoration: none;
   color: #1687a7;
- 
 }
-.a-l{
-  padding-bottom:1%;
+.a-l {
+  padding-bottom: 1%;
 }
 .mobile,
 .email {
@@ -48,12 +43,6 @@ a {
 .my-name {
   letter-spacing: 0.6px;
   padding: 2%;
-  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-  background-size: cover;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  text-transform: uppercase;
 
   line-height: 0.75;
   margin: 10px 0;

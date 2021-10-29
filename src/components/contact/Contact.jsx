@@ -2,49 +2,46 @@ import styled from "styled-components";
 
 export default function Contact() {
   const Social = styled.div`
-  
-  border-radius: 5px;
+    letter-spacing: 1px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-around;
-    color: #D3E0EA;
+    color: #d3e0ea;
     padding-top: 10%;
     border-radius: 5px;
     @media (max-width: 768px) {
       flex-direction: column;
-      margin-top:5%;
-      
+      margin-top: 5%;
     }
-    &>div{
-      padding:2%;
+    & > div {
+      padding: 2%;
     }
-    
+
     & > div > div {
       margin: 8%;
       width: 300px;
-      padding:2%;
+      padding: 2%;
       border-radius: 5px;
       box-shadow: 2px 2px 5px 1px #d8e3e7;
       @media (max-width: 768px) {
         margin: 20px auto;
-        
       }
-      transition:transform 0.4s;
-      &:hover{
-        -ms-transform: scale(1.2); 
-        -webkit-transform: scale(1.2); 
-        transform: scale(1.2); 
+      transition: transform 0.4s;
+      &:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
       }
     }
-    &
   `;
   const FormContainer = styled.div`
     width: 350px;
     border-radius: 5px;
-    transition:transform 0.4s;
-    &:hover{
-      -ms-transform: scale(1.2); 
-      -webkit-transform: scale(1.2); 
-      transform: scale(1.2); 
+    transition: transform 0.4s;
+    &:hover {
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
     }
     @media (max-width: 768px) {
       margin: auto;
@@ -59,20 +56,20 @@ export default function Contact() {
       outline: none;
       border-radius: 5px;
       box-shadow: 1px 2px 3px 1px #d8e3e7;
-     
     }
     & > textarea {
       border: none;
-      width: 85%;
+      width: 82%;
+      padding-left: 1.5%;
+      padding-right: 1.5%;
       color: #d3e0ea;
-      padding-top:5%;
+      padding-top: 5%;
       box-shadow: 1px 2px 3px 1px #d8e3e7;
       height: 200px;
       margin: 3%;
       background: transparent;
       outline: none;
       border-radius: 5px;
-     
     }
     & > button {
       border: none;
@@ -86,7 +83,7 @@ export default function Contact() {
       margin-bottom: 10px;
       box-shadow: 2px 2px 5px 1px #d8e3e7;
       &:hover {
-        background: #1687A7;
+        background: #1687a7;
       }
     }
   `;
@@ -123,8 +120,8 @@ export default function Contact() {
           <span>Linkedin</span>
         </div>
         <div>
-          <p className = "mobile"> Mobile:- 7024370634</p>
-          <p className = "mobile"> Email:- mahi98jat@gmail.com</p>
+          <p className="mobile"> Mobile:- 7024370634</p>
+          <p className="mobile"> Email:- mahi98jat@gmail.com</p>
         </div>
       </div>
 

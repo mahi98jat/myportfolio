@@ -1,10 +1,15 @@
-# Getting Started with Create React App
+## What this website contains?
 
-This project was bootstrapped with [Create React App]
+This website has all the information about me such as my complete introduction, education background, skills and projects on which I have worked.
+
+## Getting Started with Create React App
+
+This project was bootstrapped with [Create React App] You can go in mahipal's portfolio directory.
 
 ## Available Scripts
 
-you can go in mahipal's portfolio directory.
+package.json having the dependecies that you will get along with the codes.
+
  To run use command as
  ### `npm install`
  It will install all the dependencies.
